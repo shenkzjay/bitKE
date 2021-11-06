@@ -1,0 +1,49 @@
+.Features{
+    margin:100px;
+}
+
+
+.Value{
+    font-family:noto serif;
+    font-size: 18px;
+    line-height: 24px;
+    color:#696969;
+    
+}
+
+
+.Header{
+    font-family:noto serif;
+    font-size: 48px;
+    color:#1a1a1a;
+}
+
+.value{
+    font-family:noto serif;
+    font-size: 18px;
+    line-height: 24px;
+    color:#696969;
+    text-align:center;
+    margin:100px 50px;
+}
+
+.Card{
+    display:flex;
+    flex-direction: row;
+}
+
+.Card1{
+    width:333px;
+    height:192px;
+    margin: 0 110px 0 0;
+    
+}
+
+.Title{
+    text-align:center;
+}
+
+
+.Icon{
+    place-self:center;
+}

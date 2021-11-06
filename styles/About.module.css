@@ -1,0 +1,34 @@
+.Wrap{
+    margin:200px 100px;
+}
+
+
+.About{
+    display:grid;
+   grid-template-columns: auto auto;
+   gap:5em;
+}
+
+
+.Text{
+    font-family:noto serif;
+    font-size: 18px;
+    line-height: 24px;
+    color:#696969;
+    place-self: bottom;
+  
+}
+
+.Header{
+    font-family:noto serif;
+    font-size: 48px;
+    color:#1a1a1a;
+}
+
+.Expertise{
+    margin:200px 0;
+    display:grid;
+   grid-template-columns: auto auto;
+   gap:5em;
+
+}

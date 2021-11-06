@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+ 
 }
 
 a {
@@ -13,4 +14,19 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* 
+.mapboxgl-canvas{
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+} */
+
+.leaflet-container {
+  height: 456px;
+  width:50%;
 }
