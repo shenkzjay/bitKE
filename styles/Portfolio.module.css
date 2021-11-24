@@ -1,0 +1,424 @@
+
+/** Wrapper Styles **/
+.Wrapper{
+  
+    font-family: Poppins;
+
+}
+
+
+/** Header Styles **/
+.Header{
+    height:100vh;
+    width:100%;
+    display: grid;
+    place-content:center;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(15, 13, 28, 1), rgba(24, 14, 50, 0.3)), url("/bgg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+
+}
+
+.Header h1 {
+    margin: 0 100px;
+}
+
+.Header p {
+    margin: 0 100px;
+}
+/** About Styles **/
+.About{
+    margin: 100px;
+}
+
+.About h1{
+    text-align: center;
+    margin: 2em;
+}
+
+.About img{
+    width:90%;
+    height: 10%;
+}
+
+.About p{
+    margin:0 100px;
+    line-height: 30px;
+    color: #696969;
+}
+
+
+
+/** Story **/
+.Story{
+    margin: 100px;
+ 
+}
+
+.Story img{
+    width:90%;
+    height: 10%
+}
+
+.Story p{
+    margin: 0 100px;
+    line-height: 30px;
+    color: #696969;
+}
+
+
+
+/** Our Values styles **/
+.Values{
+    text-align: center;
+    line-height: 30px;
+    background: linear-gradient(0deg, rgba(15, 13, 28, 1), rgba(24, 14, 50, 0.3)), url("/values.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: grid;
+    place-content: center;
+   
+}
+
+.Values h3{
+    font-size:48px;
+    color:white;
+}
+
+.Values p{
+    color:white;
+    margin: 0 100px;
+}
+
+
+/** Our why Styles**/
+
+.Why{
+    margin:100px;
+}
+
+
+.Why img{
+    width:90%;
+    height: 10%
+}
+
+.Why p{
+    margin:0 100px;
+    line-height: 30px;
+    color: #696969;
+}
+
+/** Connect Styles **/
+
+.Connect{
+margin: 100px;
+}
+
+
+.Connect p{
+    text-align: center;
+    margin: 50px 0;
+    color: #696969;
+}
+
+/** ConnectChild **/
+.ConnectChild{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4em;
+    margin: 100px;
+}
+
+.WeActive{
+    text-align: center;
+}
+
+.Approach{
+    text-align: center;
+}
+
+.What{
+    margin: 100px;
+}
+
+.What img{
+    width:90%;
+    height: 10%
+}
+
+.What p{
+    margin:0 100px;
+    color: #696969;
+}
+
+.Client{
+    display: grid;
+    grid-template-columns: 450px auto;
+    place-content: center;
+    height: 150vh;
+    margin: 100px;
+}
+
+.Client h1{
+    font-size: 400px;
+    color:#f9f9f9;
+}
+
+.ClientHead{
+    margin: 100px;
+}
+
+.Client div{
+    margin: 50px 0;
+}
+
+.Client p{
+    color: #696969;
+}
+
+.Audience{
+   margin:  100px;
+}
+
+.Aud{
+    display: grid;
+    grid-template-columns: auto 450px;
+    place-items: center;
+    height: 50vh;
+ 
+}
+
+.Aud h1{
+    font-size: 300px;
+    color: #f9f9f9;
+}
+
+.Numtxt{
+    order: 0;
+}
+
+.Num1{
+    order:1
+}
+
+
+.Team p{
+    margin:0 100px;
+    color: #696969;
+}
+
+.Team img{
+    width:90%;
+    height: 10%;
+}
+
+.Team{
+    margin: 100px;
+}
+
+.Work{
+    margin:  100px;
+}
+
+.Work p{
+    margin:0 100px;
+    color: #696969;
+}
+
+.Work img{
+    width:90%;
+    height: 10%;
+}
+
+
+
+
+/** Responsiveness **/
+@media screen and (max-width:480px){
+
+.Header{
+    background-position: top;
+}
+
+
+.Header h1{
+margin:30px
+
+}
+
+.Header p{
+    margin:0 30px
+    
+    }
+
+.About{
+    margin:0px;
+}
+
+.About p{
+    margin:30px;
+}
+
+.Story{
+    margin:0px;
+}
+
+.Story p{
+    margin: 30px;
+}
+
+.Values{
+    margin:30px 0;
+}
+
+.Values p{
+    margin: 30px;
+}
+
+.Why{
+    margin:0px;
+}
+
+.Why p{
+    margin: 30px;
+}
+
+.Connect{
+margin: 0px;
+}
+
+.Connect p{
+    margin: 30px;
+}
+
+.WeActive p{
+    margin: 30px;
+}
+
+.Approach p{
+    margin: 30px;
+}
+
+
+.About img{
+    width:100%;
+    height: 10%;
+}
+
+.What{
+    margin: 0px;
+}
+
+.What p{
+    margin: 30px;
+}
+
+.What img{
+    width:100%;
+    height: 10%;
+}
+
+.Story img{
+    width:100%;
+    height: 10%;
+}
+
+.Values img{
+    width:100%;
+    height: 10%;
+}
+
+
+.Connect img{
+    width:100%;
+    height: 10%;
+}
+
+
+.Aud{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+ 
+}
+
+
+.Aud h1{
+    display: none;
+}
+
+.Audience p{
+    margin: 0;
+}
+
+.Audience{
+    margin: 150px 30px;
+    
+}
+
+.Team{
+    margin: 0px;
+}
+
+.Team p{
+    margin: 0 30px;
+}
+
+.Team img{
+    width:100%;
+    height: 10%;
+}
+
+.ClientHead{
+    margin: 30px;
+}
+
+
+.Client{
+    display: grid;
+    grid-template-columns: auto;
+    place-content: center;
+    margin: 30px 0px;
+
+}
+
+.Client p{
+    margin: 5px 30px;
+}
+
+
+.Client h1{
+ display: none;
+}
+
+.Client h3{
+    margin:  0 30px;
+}
+
+.ConnectChild{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 4em;
+   margin: 0px;
+}
+
+.Work{
+    margin: 50px 0px;
+}
+
+.Work p{
+    margin: 0 30px;
+}
+
+.Work img{
+    width:100%;
+    height: 10%;
+}
+
+
+}

@@ -1,5 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /** Styling for mobile first **/
+
+
+
+
+
 
 /** Module style for container **/
 .Wrapper{
@@ -13,9 +18,8 @@
 .Container{
  display: flex;
  flex-direction: row;
- background: rgba(173,203,235,1);
+ background:white;
 
-background-blend-mode: screen;
 
  /* background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(173,203,235,1) 40%); */
@@ -24,7 +28,6 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(173,203,235,1) 4
 }
 
 .Title{
-    
     margin: 100px 0;
     justify-content: center;
     align-items: center;
@@ -33,29 +36,66 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(173,203,235,1) 4
 }
 
 .Text{
-    font-family:noto serif;
+    font-family:Poppins;  
     font-size: 18px;
     color:#1a1a1a;
     text-align: left;
     margin:0 50px 0 100px;
-    line-height: 24px;
+    line-height: 30px;
 }
 
 .Header{
-    font-family:noto serif;
+    font-family:Poppins;  
     font-size: 96px;
-    color:#1a1a1a;
-    margin: 0 100px
+    color:rgb(45, 34, 65);
+    margin: 0 100px;
 }
 
 .MapStyle{
-  
+  z-index:0
     
 }
 
-@media screen and (max-width:1200px)  {
+
+
+@media screen and (max-width:480px) {
+
+
 .Container{
- 
+display: flex;
+ flex-direction: column;
+ background:white;
 
 }
+
+.Header{
+    font-family:Poppins;  
+    font-size: 20px;
+    color:rgb(45, 34, 65);
+    margin: 40px
+}
+
+.Wrapper{
+    display: flex;
+    overflow: auto;
+
+}
+
+
+.Title{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Text{
+    font-family:Poppins;  
+    font-size: 16px;
+    color:#1a1a1a;
+    text-align: left;
+    margin:40px;
+    line-height: 24px;
+}
+
 }

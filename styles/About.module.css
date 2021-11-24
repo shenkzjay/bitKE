@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .Wrap{
     margin:200px 100px;
 }
@@ -6,23 +8,23 @@
 .About{
     display:grid;
    grid-template-columns: auto auto;
-   gap:5em;
+   gap:8em;
 }
 
 
 .Text{
-    font-family:noto serif;
+    font-family:Poppins;   
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
     color:#696969;
     place-self: bottom;
   
 }
 
 .Header{
-    font-family:noto serif;
+    font-family:Poppins;  
     font-size: 48px;
-    color:#1a1a1a;
+    color:rgb(45, 34, 65);
 }
 
 .Expertise{
@@ -30,5 +32,52 @@
     display:grid;
    grid-template-columns: auto auto;
    gap:5em;
+
+}
+
+
+@media screen and (max-width:480px){
+    .Wrap{
+        margin:0px;
+    }
+
+    .About{
+        display:grid;
+        grid-template-columns: auto;
+        gap:5em;
+       
+        
+     
+    }
+
+    .Expertise{
+        display:grid;
+       grid-template-columns: auto;
+       gap:5em;
+    
+      
+    
+       
+    }
+    
+    .Header{
+        font-size:24px;
+    }
+
+    .Text{
+        display:grid;
+        font-size:16px;
+        order:1
+    }
+
+    .BlockImg{
+        display:grid;
+        order:0
+    }
+
+    .Wrap{
+        margin:30px;
+    }
+
 
 }

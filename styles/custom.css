@@ -1,0 +1,47 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+.navbar-brand{
+    font-size:2em;
+    font-weight:bold;
+}
+
+.bg-light{
+    background-color:#f9f9f9 !important;
+    box-shadow: -3px 4px 10px 4px rgba(132, 131, 131, 0.1);
+}
+
+.navbar-light .navbar-toggler{
+    border-color:transparent !important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.08rem !important;
+}
+
+a {
+     color: rgb(45, 34, 65) !important;
+}
+
+a:hover{
+    
+    border-color:orange;
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+    color:orange !important;
+    text-decoration: none;
+    outline: none;
+}
+
+
+nav a::before {
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color:transparent;
+    left: -0.5em;
+    transition: all 0.2s ease-in-out;
+}

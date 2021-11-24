@@ -1,49 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1JlFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+.Wrap{
+    background:#f9f9f9;
+   
+    
+}
+
 .Features{
+    
     margin:100px;
+    padding:50px 0;
+  
+   
 }
 
 
 .Value{
-    font-family:noto serif;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
     color:#696969;
-    
+    font-family:Poppins;
 }
 
 
 .Header{
-    font-family:noto serif;
     font-size: 48px;
-    color:#1a1a1a;
+    color:rgb(45, 34, 65);
+    font-family:Poppins;
 }
 
 .value{
-    font-family:noto serif;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
     color:#696969;
     text-align:center;
     margin:100px 50px;
+    font-family:Poppins;
 }
 
 .Card{
-    display:flex;
-    flex-direction: row;
+    display: grid;
+    grid-gap:2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    width:100%;
+    font-family:Poppins;
+    
+
 }
 
 .Card1{
-    width:333px;
-    height:192px;
-    margin: 0 110px 0 0;
+    box-shadow: -5px 14px 20px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 20px;
+    margin:10px;
+    font-family:Poppins;
+    background:white;
     
 }
 
 .Title{
     text-align:center;
+    font-family:Poppins;
 }
 
 
 .Icon{
-    place-self:center;
+    display:flex;
+    place-content:center;
+    
+}
+
+.Card1 p{
+    padding:20px;
+    line-height:30px;
+}
+
+.Line{
+    width:20px;
+}
+
+@media screen and (max-width:480px){
+    .Card{
+        display: grid;
+        grid-gap:2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        width:100%;
+    
+    }
+
+    .Features{
+        margin:30px;
+      
+    }
+
+    .Header{
+        font-size:24px;
+    }
+
+    .Value{
+        font-size:16px;
+        margin-top:100px;
+    }
+
+    .value{
+        margin:0;
+    }
+
+    .value{
+        font-size:16px;
+   
+    }
 }

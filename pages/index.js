@@ -3,18 +3,20 @@ import dynamic from "next/dynamic"
 import Style from "../styles/Container.module.css"
 import Features from "./Features";
 import About from "./About";
-import { useState } from "react";
+
 
 //export Home
 
 function Home (){
 
   const MapDisplay = dynamic(() => import("../components/MapDisplay"), {
-  loading: () => <p>"Loading..."</p>,
+  loading: () => <p>Loading...</p>,
   ssr: false
 });
 
   return (
+    <div>
+    
     <div className={Style.Wrapper}>
       <Layout>
         <div className={Style.Container}>
@@ -37,6 +39,7 @@ function Home (){
         <Features />
         </div>
       </Layout>
+    </div>
     </div>
   );
 }

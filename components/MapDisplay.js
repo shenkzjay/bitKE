@@ -2,7 +2,9 @@ import { React, useEffect, useState } from "react"
 import axios from "axios"
 import Style from "../styles/Markerstyle.module.css"
 import { MapContainer, TileLayer, Marker, Tooltip, Popup } from "react-leaflet"
-import 'leaflet/dist/leaflet.css'
+import 'leaflet/dist/leaflet.css';
+import Head from "next/head"
+
 
 // commaNumber
 import commaNumber from 'comma-number'
@@ -48,7 +50,7 @@ function MapDisplay() {
     className: "title-text",
     iconAnchor: [12, 25],
     labelAnchor: [-6, 0],
-    popupAnchor: [0, -15],
+    popupAnchor: [0, -10],
     iconSize: [25, 41],
     html: `<div><div class=${Style.pin}></div><div class=${Style.pulse}></div></div>`
   });
@@ -56,7 +58,10 @@ function MapDisplay() {
 
   const [allStats, setStats] = useState([])
   return (
-    <div>
+    <div className={Style.MapBody}>
+      <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        </Head>
       <MapContainer
         center={[viewport.latitude, viewport.longitude]}
         zoom={viewport.zoom}
@@ -72,8 +77,9 @@ function MapDisplay() {
 
 
         {allStats.length > 0 && allStats.map((stat, index) => {
-          return <Marker eventHandlers={{ mouseover: (e) =>  e.target.openPopup()}} onClick={() => console.log("Hello")} key={index} position={[stat.latitude, stat.longitude]} icon={markerIcon}>
-            
+        
+      return <Marker eventHandlers={{ mouseover: (e) =>  e.target.openPopup()}}   onClick={() => console.log("Hello")} key={index} position={[stat.latitude, stat.longitude]} icon={markerIcon}>
+      {/* // return <Marker onMouseOver={e => {e.target.openPopup()}}  onMouseOut={e => {e.target.closePopup()}}  key={index} position={[stat.latitude, stat.longitude]} icon={markerIcon}> */}
             <Popup className={Style.popup_data}>
                 <h1>{stat.country}</h1>
                 <p>Population: {commaNumber(stat.population)}</p>
