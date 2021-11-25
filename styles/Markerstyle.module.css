@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-
-
 .Africa {
-  width: 55vw;
-  height: 90vh;
+    width: 55vw;
+    height: 90vh;
 }
-
 
 .pin {
     width: 30px;
@@ -365,24 +361,23 @@
 
 
 /**Tablet**/
-@media screen and (min-width:481px) and (max-width:800px){
-  .Africa {
-    width: 100%;
-    height: 100%;
-  }
+
+@media screen and (min-width:481px) and (max-width:800px) {
+    .Africa {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
-
-
 /**Mobile**/
-@media screen and (max-width:480px){
-  .Africa {
-    width: 100%;
-    height: 60vh;
-  }
 
-  .MapBody{
-    margin:20px;
-  }
+@media screen and (max-width:480px) {
+    .Africa {
+        width: 100%;
+        height: 60vh;
+    }
+    .MapBody {
+        margin: 20px;
+    }
 }
